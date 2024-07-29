@@ -1,0 +1,29 @@
+query($slug:String!){
+  recipes(filters:{category:{slug:{eq:$slug}}} ) {
+    data{
+      id
+      attributes{
+        name
+        description
+        likes
+        img
+        category {
+          data {
+            id
+            attributes {
+              name
+            }
+          }
+        }
+        autor {
+          data {
+            id
+            attributes {
+              username
+            }
+          }
+        }
+      }
+    }
+  }
+}

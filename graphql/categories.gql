@@ -1,0 +1,39 @@
+query {
+    categories {
+      data {
+        id
+        attributes {
+          name
+          icon
+          slug
+          description
+          img
+        }
+      }
+    }
+      recipes {
+      data {
+        id
+        attributes {
+          name
+          likes
+          category {
+            data {
+              id
+              attributes {
+                name
+                slug
+              }
+            }
+          }
+          autor{
+            data{
+              attributes{
+                username
+              }
+            }
+          }
+        }
+      }
+    }
+  }

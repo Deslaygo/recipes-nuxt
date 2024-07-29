@@ -49,13 +49,13 @@ export default {
   ],
 
   axios: {
-    baseURL: 'http://localhost:1337/'
+    baseURL: 'https://strapi-recipes-45547ce6d917.herokuapp.com/'
   },
 
   apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint: 'http://localhost:1337/graphql',
+        httpEndpoint: 'https://strapi-recipes-45547ce6d917.herokuapp.com/graphql',
       }
     }
   },

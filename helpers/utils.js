@@ -1,6 +1,6 @@
 
 
-export const remapRecipes = (recipes) => {
+export default function remapRecipes(recipes){
   return recipes.map(recipe => {
     let category = recipe.attributes.category || null;
 

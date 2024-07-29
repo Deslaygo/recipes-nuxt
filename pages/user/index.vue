@@ -51,8 +51,12 @@ export default {
     this.reloadRecipes();
   },
   methods: {
-    openCreateModal =() => this.createModal = true,
-    openDeleteModal =() => this.deleteModal = true,
+    openCreateModal(){
+    this.createModal = true;
+    },
+    openDeleteModal(){
+      this.deleteModal = true;
+    },
     async reloadRecipes(){
       console.log("execute reload recipes")
       this.$store.dispatch('userRecipes/loadRecipes');

@@ -43,6 +43,7 @@ export const actions = {
 
       client.query(query)
         .then((response) => {
+          console.log("categories",response);
           commit('setCategories', response.data.categories.data);
           // commit('setLoadedRecipes', response.data.recipes.data);
           resolve();

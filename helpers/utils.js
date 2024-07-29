@@ -1,6 +1,6 @@
 
 
-export default function remapRecipes(recipes){
+function remapRecipes(recipes){
   return recipes.map(recipe => {
     let category = recipe.attributes.category || null;
 
@@ -20,3 +20,6 @@ export default function remapRecipes(recipes){
     }
   })
 }
+
+
+export default remapRecipes;

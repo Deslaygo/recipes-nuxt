@@ -1,4 +1,4 @@
-import { remapRecipes } from '../helpers/utils';
+import remapRecipes from '../helpers/utils';
 export const strict = false
 
 
